@@ -1,0 +1,24 @@
+*{
+margin: 0;
+padding: 0;
+text-align: center;
+font-size:26px;
+}
+
+h1{
+    color: Blue;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+div{
+    margin-top:20px;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#danger{
+    
+    color: red;
+    text-align: center;
+}
