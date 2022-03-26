@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMPLES VUEJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> <!-- Script de chamada do Vue -->
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+<body>
+
+    <div id="app">
+        <h1>{{title}}</h1>
+        <label for="">Nome</label><br>
+        <input type="text" v-model="nome">
+    
+        <br><br>
+        <label for="">Telefone</label><br>
+        <input type="tel" v-model="telefone">
+    
+        <br><br>
+
+        <label for="">Você tem disponibilidade para viagens ?</label><br><br>
+        <input type="radio" v-model="option" value="sim">Sim
+        <input type="radio" v-model="option" value="nao">Não
+            
+        <br><br>
+        <label for="">Como nos conhece?</label>
+        <select v-model="comoNosConheceu">
+        <option value="">Escolha</option>
+        <option value="Google">Google</option>
+        <option value="TV">TV</option>
+        <option value="Revista">Revista</option>
+        </select>
+    
+        <br><br>
+    
+        <hr>
+        <br>
+       <section>    
+<h1>{{espelho}}</h1>
+        Nome: {{ nome }} <br><br>
+        Telefone: {{ telefone }} <br><br>
+        Novidades: {{ novidades }} <br><br>
+        Disponibilidade para viagens: {{ option }} <br><br>
+        Como nos conheceu? {{ comoNosConheceu }} <br><br>
+
+        </section>
+        
+        </div>
+    
+    
+
+<script>
+
+    var app = new Vue({
+    el: '#app',
+    data: {
+        title: "Formulario",
+        espelho: "Espelho",
+        nome:"",
+        telefone:"",
+        novidades: "",
+        option: "",
+        comoNosConheceu: "",  
+              
+    }
+  });
+    
+</script>
+
+
+</body>
+</html> 
